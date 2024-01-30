@@ -1,4 +1,3 @@
-
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -14,4 +13,3 @@ cursor.execute("SELECT * FROM etudiant")
 
 etudiant = cursor.fetchall()
 print(etudiant)
-
