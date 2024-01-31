@@ -7,3 +7,8 @@ db = mysql.connector.connect(
     database="laplateforme",
 )
 cursor = db.cursor()
+
+cursor.execute("SELECT nom, capacite FROM salle");
+resultat = cursor.fetchall()
+
+print(resultat)
